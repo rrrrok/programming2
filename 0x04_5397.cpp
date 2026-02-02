@@ -19,15 +19,15 @@ int main(){
             else if(c=='>'){
                 if(iter != L.end()) iter++;
             }else if(c=='-'){
-                if(iter != L.begin()) L.erase(--iter);
+                if(iter != L.begin()) iter = L.erase(--iter);
             }else{
                 L.insert(iter,c);
             }
         }
-        for(char tmp2:L){
+        for(auto tmp2:L){
             cout <<tmp2;
         }
         cout <<'\n';
     }
     return 0;
-}
+}   
