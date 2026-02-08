@@ -2,8 +2,6 @@
 
 using namespace std;
 int main(){
-    int n;
-    cin >> n;
-    cout << n << endl;
-    return 0;
+    pair<int,int> tmp = make_pair(10,13);
+    cout << tmp.first;
 }
